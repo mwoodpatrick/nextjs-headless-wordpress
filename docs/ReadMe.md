@@ -1,36 +1,36 @@
-Lesson|Video|Duration|Commit
------------- | -------------|-----|------
-[Docker WordPress Tutorial](#dockerwordpresstutorial)|[lQo9L3bk1J4](https://www.youtube.com/watch?v=lQo9L3bk1J4)|21:27|[commitId](https://github.com/commitId)
-[Docker Containers](#dockercontainers)|[tJb5HjUuQzE](https://www.youtube.com/watch?v=tJb5HjUuQzE)|13:42|[commitId](https://github.com/commitId)
-[Setup Nextjs from scratch](#setupnextjsfromscratch)|[OPEyP6EDUOk](https://www.youtube.com/watch?v=OPEyP6EDUOk)|14:13|[commitId](https://github.com/commitId)
-[Add TailwindCSS to a NextJS Application](#addtailwindcsstoanextjsapplication)|[o6nuaf8zKvg](https://www.youtube.com/watch?v=o6nuaf8zKvg)|13:31|[commitId](https://github.com/commitId)
-[Setup Apollo GraphQL Next js](#setupapollographqlnextjs)|[XRQqiGVyvj0](https://www.youtube.com/watch?v=XRQqiGVyvj0)|9:55|[commitId](https://github.com/commitId)
-[Fetch Menus with GraphQL](#fetchmenuswithgraphql)|[QZA51PwSF7w](https://www.youtube.com/watch?v=QZA51PwSF7w)|13:21|[commitId](https://github.com/commitId)
-[getStaticProps Nextjs](#getstaticpropsnextjs)|[Tnghi0bglT4](https://www.youtube.com/watch?v=Tnghi0bglT4)|8:03|[commitId](https://github.com/commitId)
-[Display WordPress Menus in Next.js via GraphQL](#displaywordpressmenusinnextjsviagraphql)|[lCGTj9y7I80](https://www.youtube.com/watch?v=lCGTj9y7I80)|18:32|[commitId](https://github.com/commitId)
-[Incremental Static Regeneration Nextjs](#incrementalstaticregenerationnextjs)|[1AytR6POwUA](https://www.youtube.com/watch?v=1AytR6POwUA)|13:31|[commitId](https://github.com/commitId)
-[Next js navigation bar](#nextjsnavigationbar)|[xfF3Tyf3zBc](https://www.youtube.com/watch?v=xfF3Tyf3zBc)|3:39|[commitId](https://github.com/commitId)
-[Next.js Site title](#nextjssitetitle)|[Mj9QjPUiIOI](https://www.youtube.com/watch?v=Mj9QjPUiIOI)|14:41|[commitId](https://github.com/commitId)
-[How to add a favicon to a Next.js static site](#howtoaddafavicontoanextjsstaticsite)|[mqPp-WBMR-4](https://www.youtube.com/watch?v=mqPp-WBMR-4)|3:05|[commitId](https://github.com/commitId)
-[Nextjs Widgets](#nextjswidgets)|[3nJ6PCxY1n8](https://www.youtube.com/watch?v=3nJ6PCxY1n8)|16:11|[commitId](https://github.com/commitId)
-[Next.js Social Links with SVG](#nextjssociallinkswithsvg)|[XIEqK2WWhcE](https://www.youtube.com/watch?v=XIEqK2WWhcE)|14:38|[commitId](https://github.com/commitId)
-[Nextjs getStaticProps](#nextjsgetstaticprops)|[eNcf-nNGR-w](https://www.youtube.com/watch?v=eNcf-nNGR-w)|26:23|[commitId](https://github.com/commitId)
-[WPGraphQL Yoast SEO Schema Next.js](#wpgraphqlyoastseoschemanextjs)|[36CkwVOWJ68](https://www.youtube.com/watch?v=36CkwVOWJ68)|22:23|[commitId](https://github.com/commitId)
-[Using Cypress with Next.js End to End testing](#usingcypresswithnextjsendtoendtesting)|[uWdr8MO1HEE](https://www.youtube.com/watch?v=uWdr8MO1HEE)|23:01|[commitId](https://github.com/commitId)
-[Making a custom  page in Next.js](#makingacustompageinnextjs)|[WLkHlJ7qTw0](https://www.youtube.com/watch?v=WLkHlJ7qTw0)|9:53|[commitId](https://github.com/commitId)
-[Blocking Fallback for getStaticPaths in Next.js](#blockingfallbackforgetstaticpathsinnextjs)|[6HTh9M0ohsw](https://www.youtube.com/watch?v=6HTh9M0ohsw)|11:34|[commitId](https://github.com/commitId)
-[NextJS + Wordpress Preview](#nextjswordpresspreview)|[fKpyl5XvD34](https://www.youtube.com/watch?v=fKpyl5XvD34)|4:35|[commitId](https://github.com/commitId)
-[Nextjs Authentication JWT](#nextjsauthenticationjwt)|[9ZkFubM3jqY](https://www.youtube.com/watch?v=9ZkFubM3jqY)|5:58|[commitId](https://github.com/commitId)
-[Advanced Features: Preview Mode](#advancedfeaturespreviewmode)|[UaWSboXn0-8](https://www.youtube.com/watch?v=UaWSboXn0-8)|6:20|[commitId](https://github.com/commitId)
-[Logging with JWT](#loggingwithjwt)|[kTvCMFjwMvE](https://www.youtube.com/watch?v=kTvCMFjwMvE)|17:14|[commitId](https://github.com/commitId)
-[Post Preview](#postpreview)|[rZuKUaUyAVE](https://www.youtube.com/watch?v=rZuKUaUyAVE)|10:23|[commitId](https://github.com/commitId)
-[Page Preview](#pagepreview)|[ryf21JEkvkI](https://www.youtube.com/watch?v=ryf21JEkvkI)|7:22|[commitId](https://github.com/commitId)
-[Page Based Pagination](#pagebasedpagination)|[3wzwmuGwpxc](https://www.youtube.com/watch?v=3wzwmuGwpxc)|8:18|[commitId](https://github.com/commitId)
+Lesson|Video|Commit
+------------ | -------------|------
+[Docker WordPress Tutorial](#docker-wordpress-tutorial)|[21:27](https://www.youtube.com/watch?v=lQo9L3bk1J4)|[commitId](https://github.com/commitId)
+[Docker Containers](#docker-containers)|[13:42](https://www.youtube.com/watch?v=tJb5HjUuQzE)|[commitId](https://github.com/commitId)
+[Setup Next.js from scratch](#setup-next.js-from-scratch)|[14:13](https://www.youtube.com/watch?v=OPEyP6EDUOk)|[commitId](https://github.com/commitId)
+[Add TailwindCSS to a NextJS Application](#add-tailwindcss-to-a-nextjs-application)|[13:31](https://www.youtube.com/watch?v=o6nuaf8zKvg)|[commitId](https://github.com/commitId)
+[Setup Apollo GraphQL Next js](#setup-apollo-graphql-next-js)|[9:55](https://www.youtube.com/watch?v=XRQqiGVyvj0)|[commitId](https://github.com/commitId)
+[Fetch Menus with GraphQL](#fetch-menus-with-graphql)|[13:21](https://www.youtube.com/watch?v=QZA51PwSF7w)|[commitId](https://github.com/commitId)
+[getStaticProps Next.js](#getstaticprops-next.js)|[8:03](https://www.youtube.com/watch?v=Tnghi0bglT4)|[commitId](https://github.com/commitId)
+[Display WordPress Menus in Next.js via GraphQL](#display-wordpress-menus-in-next.js-via-graphql)|[18:32](https://www.youtube.com/watch?v=lCGTj9y7I80)|[commitId](https://github.com/commitId)
+[Incremental Static Regeneration Next.js](#incremental-static-regeneration-next.js)|[13:31](https://www.youtube.com/watch?v=1AytR6POwUA)|[commitId](https://github.com/commitId)
+[Next js navigation bar](#next-js-navigation-bar)|[3:39](https://www.youtube.com/watch?v=xfF3Tyf3zBc)|[commitId](https://github.com/commitId)
+[Next.js Site title](#next.js-site-title)|[14:41](https://www.youtube.com/watch?v=Mj9QjPUiIOI)|[commitId](https://github.com/commitId)
+[How to add a favicon to a Next.js static site](#how-to-add-a-favicon-to-a-next.js-static-site)|[3:05](https://www.youtube.com/watch?v=mqPp-WBMR-4)|[commitId](https://github.com/commitId)
+[Next.js Widgets](#next.js-widgets)|[16:11](https://www.youtube.com/watch?v=3nJ6PCxY1n8)|[commitId](https://github.com/commitId)
+[Next.js Social Links with SVG](#next.js-social-links-with-svg)|[14:38](https://www.youtube.com/watch?v=XIEqK2WWhcE)|[commitId](https://github.com/commitId)
+[Next.js getStaticProps](#next.js-getstaticprops)|[26:23](https://www.youtube.com/watch?v=eNcf-nNGR-w)|[commitId](https://github.com/commitId)
+[WPGraphQL Yoast SEO Schema Next.js](#wpgraphql-yoast-seo-schema-next.js)|[22:23](https://www.youtube.com/watch?v=36CkwVOWJ68)|[commitId](https://github.com/commitId)
+[Using Cypress with Next.js End to End testing](#using-cypress-with-next.js-end-to-end-testing)|[23:01](https://www.youtube.com/watch?v=uWdr8MO1HEE)|[commitId](https://github.com/commitId)
+[Making a custom  page in Next.js](#making-a-custom--page-in-next.js)|[9:53](https://www.youtube.com/watch?v=WLkHlJ7qTw0)|[commitId](https://github.com/commitId)
+[Blocking Fallback for getStaticPaths in Next.js](#blocking-fallback-for-getstaticpaths-in-next.js)|[11:34](https://www.youtube.com/watch?v=6HTh9M0ohsw)|[commitId](https://github.com/commitId)
+[NextJS + Wordpress Preview](#nextjs-+-wordpress-preview)|[4:35](https://www.youtube.com/watch?v=fKpyl5XvD34)|[commitId](https://github.com/commitId)
+[Next.js Authentication JWT](#next.js-authentication-jwt)|[5:58](https://www.youtube.com/watch?v=9ZkFubM3jqY)|[commitId](https://github.com/commitId)
+[Advanced Features: Preview Mode](#advanced-features:-preview-mode)|[6:20](https://www.youtube.com/watch?v=UaWSboXn0-8)|[commitId](https://github.com/commitId)
+[Logging with JWT](#logging-with-jwt)|[17:14](https://www.youtube.com/watch?v=kTvCMFjwMvE)|[commitId](https://github.com/commitId)
+[Post Preview](#post-preview)|[10:23](https://www.youtube.com/watch?v=rZuKUaUyAVE)|[commitId](https://github.com/commitId)
+[Page Preview](#page-preview)|[7:22](https://www.youtube.com/watch?v=ryf21JEkvkI)|[commitId](https://github.com/commitId)
+[Page Based Pagination](#page-based-pagination)|[8:18](https://www.youtube.com/watch?v=3wzwmuGwpxc)|[commitId](https://github.com/commitId)
 # Docker WordPress Tutorial
 
 # Docker Containers
 
-# Setup Nextjs from scratch
+# Setup Next.js from scratch
 
 # Add TailwindCSS to a NextJS Application
 
@@ -38,11 +38,11 @@ Lesson|Video|Duration|Commit
 
 # Fetch Menus with GraphQL
 
-# getStaticProps Nextjs
+# getStaticProps Next.js
 
 # Display WordPress Menus in Next.js via GraphQL
 
-# Incremental Static Regeneration Nextjs
+# Incremental Static Regeneration Next.js
 
 # Next js navigation bar
 
@@ -50,11 +50,11 @@ Lesson|Video|Duration|Commit
 
 # How to add a favicon to a Next.js static site
 
-# Nextjs Widgets
+# Next.js Widgets
 
 # Next.js Social Links with SVG
 
-# Nextjs getStaticProps
+# Next.js getStaticProps
 
 # WPGraphQL Yoast SEO Schema Next.js
 
@@ -66,7 +66,7 @@ Lesson|Video|Duration|Commit
 
 # NextJS + Wordpress Preview
 
-# Nextjs Authentication JWT
+# Next.js Authentication JWT
 
 # Advanced Features: Preview Mode
 

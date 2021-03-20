@@ -3,7 +3,7 @@ function clean_title(title) {
 }
 
 function generate_link(title) {
-  return title.replace(/\W/g, '').toLowerCase();
+  return clean_title(title).replace(/\s/g, '-').toLowerCase();
 }
 
 function generate_docs() {
@@ -35,7 +35,7 @@ function generate_docs() {
     {
       commitId: "",
       title: [
-        "#3 Setup Nextjs from scratch ",
+        "#3 Setup Next.js from scratch ",
         " next js wordpress graphql ",
         " next js wordpress theme",
       ],
@@ -58,7 +58,7 @@ function generate_docs() {
       title: [
         "#5 Setup Apollo GraphQL Next js ",
         "  Apollo GraphQL Tutorial ",
-        " Nextjs Apollo Client ",
+        " Next.js Apollo Client ",
         " WordPress",
       ],
       videoId: "XRQqiGVyvj0",
@@ -80,7 +80,7 @@ function generate_docs() {
     {
       commitId: "",
       title: [
-        "#7  getStaticProps Nextjs ",
+        "#7  getStaticProps Next.js ",
         " getstaticpaths next js ",
         " getstaticprops vs getinitialprops ",
         " not working",
@@ -103,8 +103,8 @@ function generate_docs() {
     {
       commitId: "",
       title: [
-        "#9 Incremental Static Regeneration Nextjs ",
-        " Nextjs revalidate ",
+        "#9 Incremental Static Regeneration Next.js ",
+        " Next.js revalidate ",
         " SSR in nextjs",
       ],
       videoId: "1AytR6POwUA",
@@ -115,7 +115,7 @@ function generate_docs() {
       commitId: "",
       title: [
         "#10 Next js navigation bar ",
-        " Nextjs revalidate ",
+        " Next.js revalidate ",
         " next js tutorial ",
         " Next js WordPress graphql",
       ],
@@ -141,7 +141,7 @@ function generate_docs() {
       title: [
         "#12 How to add a favicon to a Next.js static site ",
         " next js favicon not working ",
-        " Nextjs WordPress",
+        " Next.js WordPress",
       ],
       videoId: "mqPp-WBMR-4",
       url: "https://www.youtube.com/watch?v=mqPp-WBMR-4",
@@ -150,11 +150,11 @@ function generate_docs() {
     {
       commitId: "",
       title: [
-        "#13 Nextjs Widgets ",
+        "#13 Next.js Widgets ",
         " Footer ",
         " Next js persistent layout ",
         " TailwindGrids ",
-        " Nextjs WordPress GraphQL",
+        " Next.js WordPress GraphQL",
       ],
       videoId: "3nJ6PCxY1n8",
       url: "https://www.youtube.com/watch?v=3nJ6PCxY1n8",
@@ -175,7 +175,7 @@ function generate_docs() {
     {
       commitId: "",
       title: [
-        "#15 Nextjs getStaticProps ",
+        "#15 Next.js getStaticProps ",
         " getStaticPaths ",
         " fallback ",
         " revalidate ",
@@ -189,7 +189,7 @@ function generate_docs() {
       commitId: "",
       title: [
         "WPGraphQL Yoast SEO Schema Next.js ",
-        " Nextjs seo ",
+        " Next.js seo ",
         " next-seo opengraph ",
         " JSON-LD",
       ],
@@ -201,7 +201,7 @@ function generate_docs() {
       commitId: "",
       title: [
         "#17 Using Cypress with Next.js End to End testing ",
-        " Nextjs and Cypress Example ",
+        " Next.js and Cypress Example ",
         " Cypress IO Tutorial",
       ],
       videoId: "uWdr8MO1HEE",
@@ -244,7 +244,7 @@ function generate_docs() {
     {
       commitId: "",
       title: [
-        "#21 Nextjs Authentication JWT ",
+        "#21 Next.js Authentication JWT ",
         " Set up wp-graphql-jwt-authentication for post Preview ",
         " WordPress",
       ],
@@ -317,20 +317,16 @@ function generate_docs() {
     },
   ];
 
-  let buff = "Lesson|Video|Duration|Commit\n"+
-"------------ | -------------|-----|------\n";
+  let buff = "Lesson|Video|Commit\n"+
+"------------ | -------------|------\n";
 
   playlist.forEach(function add_row(video, index) {
     let title = clean_title(video.title[0])
     let link = generate_link(title);
 
     buff +=
-      `[${title}](#${link})` +
-      "|" +
-      `[${video.videoId}](${video.url})` +
-      "|" +
-      `${video.duration}` +
-      "|" +
+      `[${title}](#${link})` + "|" +
+      `[${video.duration}](${video.url})` + "|" +
       `[commitId](${baseURL}/commitId)` +
       "\n";
   })
