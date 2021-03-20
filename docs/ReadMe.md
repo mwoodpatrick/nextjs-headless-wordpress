@@ -29,9 +29,6 @@
 without having to re-build next.js the application. 
 14. Gutenberg styles support
 
-## [Tutorial Course](https://codeytek.com/course/next-js-headless-wordpress-course/)
-Code for the tutorial is in the [Tutorial Branch](https://github.com/imranhsayed/nextjs-headless-wordpress/tree/feature/youtube-tutorial)
-
 ## [Live Demo Link](https://nextjs-headless-wordpress-demo.vercel.app/)
 https://nextjs-headless-wordpress-demo.vercel.app/
 
@@ -143,9 +140,11 @@ RewriteRule . /index.php [L]
 - Ensure you have updated the block registry from WordPress backend > GraphQL Gutenberg 
 - Ensure that `.env` file has correct env variables and their values in `frontend/.env`
 
-## Lessons
+## [Tutorial Course](https://codeytek.com/course/next-js-headless-wordpress-course/)
+Code for the tutorial is in the [Tutorial Branch](https://github.com/imranhsayed/nextjs-headless-wordpress/tree/feature/youtube-tutorial)
 
-Lesson|Video|Commit
+
+Tutorial|Video|Commit
 ------------ | -------------|------
 [Docker WordPress Tutorial](#docker-wordpress-tutorial)|[21:27](https://www.youtube.com/watch?v=lQo9L3bk1J4)|[commitId](https://github.com/commitId)
 [Docker Containers](#docker-containers)|[13:42](https://www.youtube.com/watch?v=tJb5HjUuQzE)|[commitId](https://github.com/commitId)
@@ -168,7 +167,7 @@ Lesson|Video|Commit
 [Blocking Fallback for getStaticPaths in Next.js](#blocking-fallback-for-getstaticpaths-in-nextjs)|[11:34](https://www.youtube.com/watch?v=6HTh9M0ohsw)|[commitId](https://github.com/commitId)
 [Next.JS + Wordpress Preview](#nextjs-+-wordpress-preview)|[4:35](https://www.youtube.com/watch?v=fKpyl5XvD34)|[commitId](https://github.com/commitId)
 [Next.js Authentication JWT](#nextjs-authentication-jwt)|[5:58](https://www.youtube.com/watch?v=9ZkFubM3jqY)|[commitId](https://github.com/commitId)
-[Advanced Features: Preview Mode](#advanced-features:-preview-mode)|[6:20](https://www.youtube.com/watch?v=UaWSboXn0-8)|[commitId](https://github.com/commitId)
+[Advanced Features: Preview Mode](#advanced-features-preview-mode)|[6:20](https://www.youtube.com/watch?v=UaWSboXn0-8)|[commitId](https://github.com/commitId)
 [Logging with JWT](#logging-with-jwt)|[17:14](https://www.youtube.com/watch?v=kTvCMFjwMvE)|[commitId](https://github.com/commitId)
 [Post Preview](#post-preview)|[10:23](https://www.youtube.com/watch?v=rZuKUaUyAVE)|[commitId](https://github.com/commitId)
 [Page Preview](#page-preview)|[7:22](https://www.youtube.com/watch?v=ryf21JEkvkI)|[commitId](https://github.com/commitId)
