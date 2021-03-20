@@ -3,7 +3,7 @@ function clean_title(title) {
 }
 
 function generate_link(title) {
-  return clean_title(title).replace(/\s/g, '-').replace(/\./g, '-').toLowerCase();
+  return clean_title(title).replace(/\s/g, '-').replace(/\./g, '').toLowerCase();
 }
 
 function generate_docs() {
