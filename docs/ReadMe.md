@@ -3,7 +3,7 @@ Lesson|Video|Commit
 [Docker WordPress Tutorial](#docker-wordpress-tutorial)|[21:27](https://www.youtube.com/watch?v=lQo9L3bk1J4)|[commitId](https://github.com/commitId)
 [Docker Containers](#docker-containers)|[13:42](https://www.youtube.com/watch?v=tJb5HjUuQzE)|[commitId](https://github.com/commitId)
 [Setup Next.js from scratch](#setup-nextjs-from-scratch)|[14:13](https://www.youtube.com/watch?v=OPEyP6EDUOk)|[commitId](https://github.com/commitId)
-[Add TailwindCSS to a NextJS Application](#add-tailwindcss-to-a-nextjs-application)|[13:31](https://www.youtube.com/watch?v=o6nuaf8zKvg)|[commitId](https://github.com/commitId)
+[Add TailwindCSS to a Next.JS Application](#add-tailwindcss-to-a-nextjs-application)|[13:31](https://www.youtube.com/watch?v=o6nuaf8zKvg)|[commitId](https://github.com/commitId)
 [Setup Apollo GraphQL Next.js](#setup-apollo-graphql-nextjs)|[9:55](https://www.youtube.com/watch?v=XRQqiGVyvj0)|[commitId](https://github.com/commitId)
 [Fetch Menus with GraphQL](#fetch-menus-with-graphql)|[13:21](https://www.youtube.com/watch?v=QZA51PwSF7w)|[commitId](https://github.com/commitId)
 [getStaticProps Next.js](#getstaticprops-nextjs)|[8:03](https://www.youtube.com/watch?v=Tnghi0bglT4)|[commitId](https://github.com/commitId)
@@ -19,7 +19,7 @@ Lesson|Video|Commit
 [Using Cypress with Next.js End to End testing](#using-cypress-with-nextjs-end-to-end-testing)|[23:01](https://www.youtube.com/watch?v=uWdr8MO1HEE)|[commitId](https://github.com/commitId)
 [Making a custom  page in Next.js](#making-a-custom--page-in-nextjs)|[9:53](https://www.youtube.com/watch?v=WLkHlJ7qTw0)|[commitId](https://github.com/commitId)
 [Blocking Fallback for getStaticPaths in Next.js](#blocking-fallback-for-getstaticpaths-in-nextjs)|[11:34](https://www.youtube.com/watch?v=6HTh9M0ohsw)|[commitId](https://github.com/commitId)
-[NextJS + Wordpress Preview](#nextjs-+-wordpress-preview)|[4:35](https://www.youtube.com/watch?v=fKpyl5XvD34)|[commitId](https://github.com/commitId)
+[Next.JS + Wordpress Preview](#nextjs-+-wordpress-preview)|[4:35](https://www.youtube.com/watch?v=fKpyl5XvD34)|[commitId](https://github.com/commitId)
 [Next.js Authentication JWT](#nextjs-authentication-jwt)|[5:58](https://www.youtube.com/watch?v=9ZkFubM3jqY)|[commitId](https://github.com/commitId)
 [Advanced Features: Preview Mode](#advanced-features:-preview-mode)|[6:20](https://www.youtube.com/watch?v=UaWSboXn0-8)|[commitId](https://github.com/commitId)
 [Logging with JWT](#logging-with-jwt)|[17:14](https://www.youtube.com/watch?v=kTvCMFjwMvE)|[commitId](https://github.com/commitId)
@@ -32,7 +32,7 @@ Lesson|Video|Commit
 
 # Setup Next.js from scratch
 
-# Add TailwindCSS to a NextJS Application
+# Add TailwindCSS to a Next.JS Application
 
 # Setup Apollo GraphQL Next.js
 
@@ -64,7 +64,7 @@ Lesson|Video|Commit
 
 # Blocking Fallback for getStaticPaths in Next.js
 
-# NextJS + Wordpress Preview
+# Next.JS + Wordpress Preview
 
 # Next.js Authentication JWT
 

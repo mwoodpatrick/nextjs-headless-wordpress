@@ -46,7 +46,7 @@ function generate_docs() {
     {
       commitId: "",
       title: [
-        "#4 Add TailwindCSS to a NextJS Application ",
+        "#4 Add TailwindCSS to a Next.JS Application ",
         " Next.js - Configure Tailwindcss and SASS PostCSS",
       ],
       videoId: "o6nuaf8zKvg",
@@ -105,7 +105,7 @@ function generate_docs() {
       title: [
         "#9 Incremental Static Regeneration Next.js ",
         " Next.js revalidate ",
-        " SSR in nextjs",
+        " SSR in Next.js",
       ],
       videoId: "1AytR6POwUA",
       url: "https://www.youtube.com/watch?v=1AytR6POwUA",
@@ -234,7 +234,7 @@ function generate_docs() {
     {
       commitId: "",
       title: [
-        "#20 NextJS + Wordpress Preview ",
+        "#20 Next.JS + Wordpress Preview ",
         " How to get real-time draft previews with WordPress and Next.js",
       ],
       videoId: "fKpyl5XvD34",
