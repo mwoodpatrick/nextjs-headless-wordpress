@@ -3,7 +3,7 @@ function clean_title(title) {
 }
 
 function generate_link(title) {
-  return clean_title(title).replace(/\s/g, '-').toLowerCase();
+  return clean_title(title).replace(/\s/g, '-').replace(/\./g, '-').toLowerCase();
 }
 
 function generate_docs() {
@@ -36,8 +36,8 @@ function generate_docs() {
       commitId: "",
       title: [
         "#3 Setup Next.js from scratch ",
-        " next js wordpress graphql ",
-        " next js wordpress theme",
+        " Next.js wordpress graphql ",
+        " Next.js wordpress theme",
       ],
       videoId: "OPEyP6EDUOk",
       url: "https://www.youtube.com/watch?v=OPEyP6EDUOk",
@@ -56,7 +56,7 @@ function generate_docs() {
     {
       commitId: "",
       title: [
-        "#5 Setup Apollo GraphQL Next js ",
+        "#5 Setup Apollo GraphQL Next.js ",
         "  Apollo GraphQL Tutorial ",
         " Next.js Apollo Client ",
         " WordPress",
@@ -70,7 +70,7 @@ function generate_docs() {
       title: [
         "#6 Fetch Menus with GraphQL ",
         " Using Fragments ",
-        " Next js WordPress Headless ",
+        " Next.js WordPress Headless ",
         " wp-graphql",
       ],
       videoId: "QZA51PwSF7w",
@@ -81,7 +81,7 @@ function generate_docs() {
       commitId: "",
       title: [
         "#7  getStaticProps Next.js ",
-        " getstaticpaths next js ",
+        " getstaticpaths Next.js ",
         " getstaticprops vs getinitialprops ",
         " not working",
       ],
@@ -93,7 +93,7 @@ function generate_docs() {
       commitId: "",
       title: [
         "#8 Display WordPress Menus in Next.js via GraphQL ",
-        " next js wordpress headless ",
+        " Next.js wordpress headless ",
         " WPGraphQL",
       ],
       videoId: "lCGTj9y7I80",
@@ -114,10 +114,10 @@ function generate_docs() {
     {
       commitId: "",
       title: [
-        "#10 Next js navigation bar ",
+        "#10 Next.js navigation bar ",
         " Next.js revalidate ",
-        " next js tutorial ",
-        " Next js WordPress graphql",
+        " Next.js tutorial ",
+        " Next.js WordPress graphql",
       ],
       videoId: "xfF3Tyf3zBc",
       url: "https://www.youtube.com/watch?v=xfF3Tyf3zBc",
@@ -129,8 +129,8 @@ function generate_docs() {
         "#11 Next.js Site title ",
         " Tagline ",
         " Logo ",
-        " next js tutorial ",
-        " next js wordpress graphql",
+        " Next.js tutorial ",
+        " Next.js wordpress graphql",
       ],
       videoId: "Mj9QjPUiIOI",
       url: "https://www.youtube.com/watch?v=Mj9QjPUiIOI",
@@ -140,7 +140,7 @@ function generate_docs() {
       commitId: "",
       title: [
         "#12 How to add a favicon to a Next.js static site ",
-        " next js favicon not working ",
+        " Next.js favicon not working ",
         " Next.js WordPress",
       ],
       videoId: "mqPp-WBMR-4",
@@ -152,7 +152,7 @@ function generate_docs() {
       title: [
         "#13 Next.js Widgets ",
         " Footer ",
-        " Next js persistent layout ",
+        " Next.js persistent layout ",
         " TailwindGrids ",
         " Next.js WordPress GraphQL",
       ],
@@ -165,8 +165,8 @@ function generate_docs() {
       title: [
         "#14 Next.js Social Links with SVG ",
         " next svg ",
-        " next js tutorial ",
-        " next js wordpress graphql",
+        " Next.js tutorial ",
+        " Next.js wordpress graphql",
       ],
       videoId: "XIEqK2WWhcE",
       url: "https://www.youtube.com/watch?v=XIEqK2WWhcE",
@@ -257,7 +257,7 @@ function generate_docs() {
       title: [
         "#22 Advanced Features: Preview Mode ",
         " Live Preview with Next.js ",
-        " Next js api set-cookie ",
+        " Next.js api set-cookie ",
         " API",
       ],
       videoId: "UaWSboXn0-8",
