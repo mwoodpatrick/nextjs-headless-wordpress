@@ -36,16 +36,7 @@ https://nextjs-headless-wordpress-demo.vercel.app/
 
 ## Setup
 
-First clone/fork the repo and cd into it.
 
-```bash
-git clone https://github.com/imranhsayed/nextjs-headless-wordpress.git
-cd nextjs-headless-wordpress
-```
-
-- Install Docker from [docs.docker.com/get-docker](https://docs.docker.com/get-docker/) ( this step may not be required if you are using your own WordPress setup.)
-
-It's very simple to setup the project with just one command and this `./nxtwp configure`
 
 **One command project setup**
 
@@ -174,7 +165,23 @@ Tutorial|Video|Commit
 [Page Based Pagination](#page-based-pagination)|[8:18](https://www.youtube.com/watch?v=3wzwmuGwpxc)|[commitId](https://github.com/commitId)
 ### Docker WordPress Tutorial
 
+Learn about how to setup WordPress with Docker mysql phpmyadmin for a Next.js Headless WordPress
+
+First clone/fork the repo and cd into it.
+
+```bash
+git clone https://github.com/imranhsayed/nextjs-headless-wordpress.git
+cd nextjs-headless-wordpress
+```
+
+- Install Docker from [docs.docker.com/get-docker](https://docs.docker.com/get-docker/) ( this step may not be required if you are using your own WordPress setup.)
+
+It's very simple to setup the project with just one command and this `./nxtwp configure`
+
+
 ### Docker Containers
+
+Learn about Accessing MySQL & WordPress docker containers for a Next.js Headless WordPress.
 
 ### Setup Next.js from scratch
 
@@ -225,6 +232,122 @@ Tutorial|Video|Commit
 ### Page Based Pagination
 
 
+## [Backend](https://github.com/imranhsayed/nextjs-headless-wordpress/tree/master/backend)
+Run this from root
+```bash
+docker-compose -f backend/docker-compose.yml up -d 
+```
+- Make sure to set Home Page as Front page from WordPress dashboard > Customize > Homepage Settings.
+*WordPress Backend* will be available on [http://localhost:8020](http://localhost:8020)
+
+*[phpMyAdmin](https://github.com/phpmyadmin/phpmyadmin)*: You can access php myadmin on [http://localhost:8183](http://localhost:8183)
+```shell script
+port: mysql:3306
+username: root
+password: root
+``` 
+
+phpmyadmin docker image already comes with the username `root` and we have set the mysql password in the dockerfile
+
+* If you happen to use your own WordPress setup, be sure to install and activate plugins from composer.json 
+
+This course requires the following plugin extensions:
+
+	* WPGraphQL [wp-graphql/wp-graphql](https://github.com/wp-graphql/wp-graphql) is a free, open-source WordPress plugin that provides an extendable GraphQL schema and API for any WordPress site.
+	* WPGraphQL JWT Authentication [wp-graphql/wp-graphql-jwt-authentication](https://github.com/wp-graphql/wp-graphql-jwt-authentication) extends the WPGraphQL plugin to provide authentication using JWT (JSON Web Tokens)
+	* WPGraphQL Gutenberg [pristas-peter/wp-graphql-gutenberg](https://github.com/pristas-peter/wp-graphql-gutenberg) allows you to query gutenberg blocks through wp-graphql
+    * Advanced Custom Fields [wpackagist-plugin/advanced-custom-fields](https://www.advancedcustomfields.com/) allows you to take full control of your WordPress edit screens & custom field data.
+    * Headless CMS [imranhsayed/headless-cms](https://github.com/imranhsayed/headless-cms) adds features to use WordPress as a headless CMS with any front-end environment using REST API
+	* [yoast/wordpress-seo](https://yoast.com/wordpress/plugins/seo/#utm_source=yoast-seo&utm_medium=software&utm_campaign=wordpress-general) help you rank higher in search engines.
+	* WPGraphQL Yoast SEO [ashhitch/wp-graphql-yoast-seo](https://github.com/ashhitch/wp-graphql-yoast-seo) This is an extension to the [WPGraphQL](https://github.com/wp-graphql/wp-graphql) plugin that returns Yoast SEO data.
+    * valu/wp-graphql-offset-pagination
+
+
+and add your own WordPress site URL
+in an .env file, You can check the .env-example file for reference.
+
+## [Frontend](https://github.com/imranhsayed/nextjs-headless-wordpress/tree/master/frontend)
+Run this from root for the first time.
+```bash
+cd frontend; npm i && npm run dev
+```
+
+### During development
+```bash
+cd frontend; npm run dev
+```
+
+Frontend will be available on port [http://localhost:3000](http://localhost:3000)
+
+### Evironment vars. 
+Create a `.env` file taking reference from `.env-example` inside frontend directory and add your WordPress Site URL ( for local development put `http://localhost:8020` as your WordPress URL)
+
+## Development ( Developers only )
+
+1. When we change the composer.json, run from root
+```shell script
+docker-compose -f backend/docker-compose.yml down && \
+docker-compose -f backend/docker-compose.yml up -d 
+```
+
+First line command will stops and removes all the docker containers and second line command will restart all containers.
+Notice that `-d` is to run in detach mode and you can always remove that flag, and run the command so you can see the live logs.
+Or you can check the logs for 
+
+2. Check the logs
+While the above command is running in detached mode ( -d ), you can run this command in a new terminal tab to see the live logs.
+```shell script
+docker logs -f container-name
+```
+
+3. Login to SSH and wp cli.
+```
+docker exec -it image-name bash // e.g. docker exec -it backend_wordpress_1 bash
+wp
+```
+
+e.g.
+```bash
+docker container ls
+```
+
+#### result
+```shell script
+CONTAINER ID        IMAGE               COMMAND                  CREATED              STATUS              PORTS                  NAMES
+d0b4a3b0074f        wordpress:latest    "docker-entrypoint.s…"   About a minute ago   Up About a minute   0.0.0.0:8000->80/tcp   backend_wordpress_1
+aad078ebe131        mysql:5.7           "docker-entrypoint.s…"   About a minute ago   Up About a minute   3306/tcp, 33060/tcp    backend_db_1
+```
+Here container-name is `backend_db_1` or `backend_wordpress_1`
+
+3. If you make changes to docker-compose.yml file, run the following:
+
+If you happend to change the port in `docker-compose.yml` make sure to delete the `db` directory and then run below.
+
+```shell script
+docker-compose -f backend/docker-compose.yml down && \
+docker-compose -f backend/docker-compose.yml up -d
+```
+
+## Debugging
+
+1. If you get 404 on frontend for graphql request, check to see that the .htaccess file in wordpress directory has the rules
+
+```shell script
+# BEGIN WordPress
+# The directives (lines) between "BEGIN WordPress" and "END WordPress" are
+# dynamically generated, and should only be modified via WordPress filters.
+# Any changes to the directives between these markers will be overwritten.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+```
 
 ## References for Docker Images.
 
