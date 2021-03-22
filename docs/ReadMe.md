@@ -137,7 +137,7 @@ Code for the tutorial is in the [Tutorial Branch](https://github.com/imranhsayed
 
 Tutorial|Video|Commit
 ------------ | -------------|------
-[Docker WordPress Tutorial](#docker-wordpress-tutorial)|[21:27](https://www.youtube.com/watch?v=lQo9L3bk1J4)|[commitId](https://github.com/commitId)
+[Docker WordPress Tutorial](#docker-wordpress-tutorial)|[21:27](https://www.youtube.com/watch?v=lQo9L3bk1J4)|[036e893](https://github.com/imranhsayed/nextjs-headless-wordpress/commit/036e89334c38c0ce7bc56dcbe988998e6cacf580)
 [Docker Containers](#docker-containers)|[13:42](https://www.youtube.com/watch?v=tJb5HjUuQzE)|[commitId](https://github.com/commitId)
 [Setup Next.js from scratch](#setup-nextjs-from-scratch)|[14:13](https://www.youtube.com/watch?v=OPEyP6EDUOk)|[commitId](https://github.com/commitId)
 [Add TailwindCSS to a Next.JS Application](#add-tailwindcss-to-a-nextjs-application)|[13:31](https://www.youtube.com/watch?v=o6nuaf8zKvg)|[commitId](https://github.com/commitId)
@@ -163,9 +163,10 @@ Tutorial|Video|Commit
 [Post Preview](#post-preview)|[10:23](https://www.youtube.com/watch?v=rZuKUaUyAVE)|[commitId](https://github.com/commitId)
 [Page Preview](#page-preview)|[7:22](https://www.youtube.com/watch?v=ryf21JEkvkI)|[commitId](https://github.com/commitId)
 [Page Based Pagination](#page-based-pagination)|[8:18](https://www.youtube.com/watch?v=3wzwmuGwpxc)|[commitId](https://github.com/commitId)
+
 ### Docker WordPress Tutorial
 
-Learn about how to setup WordPress with Docker mysql phpmyadmin for a Next.js Headless WordPress
+Learn about how to setup Headless WordPress with Docker mysql phpmyadmin for a backend to Next.js: 
 
 First clone/fork the repo and cd into it.
 
@@ -176,12 +177,43 @@ cd nextjs-headless-wordpress
 
 - Install Docker from [docs.docker.com/get-docker](https://docs.docker.com/get-docker/) ( this step may not be required if you are using your own WordPress setup.)
 
-It's very simple to setup the project with just one command and this `./nxtwp configure`
+#### [Backend](https://github.com/imranhsayed/nextjs-headless-wordpress/tree/master/backend)
+Run this from root
+```bash
+docker-compose -f backend/docker-compose.yml up -d 
+```
+- Make sure to set Home Page as Front page from WordPress dashboard > Customize > Homepage Settings.
+*WordPress Backend* will be available on [http://localhost:8020](http://localhost:8020)
 
+*[phpMyAdmin](https://github.com/phpmyadmin/phpmyadmin)*: You can access php myadmin on [http://localhost:8183](http://localhost:8183)
+```shell script
+port: mysql:3306
+username: root
+password: root
+``` 
+
+phpmyadmin docker image already comes with the username `root` and we have set the mysql password in the dockerfile
+
+* If you happen to use your own WordPress setup, be sure to install and activate plugins from composer.json 
+
+This course requires the following plugin extensions:
+
+* [WPGraphQL](https://github.com/wp-graphql/wp-graphql) is a free, open-source WordPress plugin that provides an extendable GraphQL schema and API for any WordPress site.
+* [WPGraphQL JWT Authentication](https://github.com/wp-graphql/wp-graphql-jwt-authentication) extends the WPGraphQL plugin to provide authentication using JWT (JSON Web Tokens)
+* [WPGraphQL Gutenberg](https://github.com/pristas-peter/wp-graphql-gutenberg) allows you to query gutenberg blocks through wp-graphql
+* [Advanced Custom Fields](https://www.advancedcustomfields.com/) allows you to take full control of your WordPress edit screens & custom field data.
+* [Headless CMS](https://github.com/imranhsayed/headless-cms) adds features to use WordPress as a headless CMS with any front-end environment using REST API
+* [Yoast SEO](https://yoast.com/wordpress/plugins/seo/#utm_source=yoast-seo&utm_medium=software&utm_campaign=wordpress-general) help you rank higher in search engines.
+* [WPGraphQL Yoast SEO](https://github.com/ashhitch/wp-graphql-yoast-seo) extends the [WPGraphQL](https://github.com/wp-graphql/wp-graphql) plugin to returns Yoast SEO data.
+* [WPGraphQL Offset Pagination](https://github.com/valu-digital/wp-graphql-offset-pagination) adds traditional offset pagination support to WPGraphQL.
+
+It's very simple to setup the project with just one command and this `./nxtwp configure`
 
 ### Docker Containers
 
 Learn about Accessing MySQL & WordPress docker containers for a Next.js Headless WordPress.
+
+
 
 ### Setup Next.js from scratch
 
@@ -232,35 +264,7 @@ Learn about Accessing MySQL & WordPress docker containers for a Next.js Headless
 ### Page Based Pagination
 
 
-## [Backend](https://github.com/imranhsayed/nextjs-headless-wordpress/tree/master/backend)
-Run this from root
-```bash
-docker-compose -f backend/docker-compose.yml up -d 
-```
-- Make sure to set Home Page as Front page from WordPress dashboard > Customize > Homepage Settings.
-*WordPress Backend* will be available on [http://localhost:8020](http://localhost:8020)
 
-*[phpMyAdmin](https://github.com/phpmyadmin/phpmyadmin)*: You can access php myadmin on [http://localhost:8183](http://localhost:8183)
-```shell script
-port: mysql:3306
-username: root
-password: root
-``` 
-
-phpmyadmin docker image already comes with the username `root` and we have set the mysql password in the dockerfile
-
-* If you happen to use your own WordPress setup, be sure to install and activate plugins from composer.json 
-
-This course requires the following plugin extensions:
-
-* WPGraphQL [wp-graphql/wp-graphql](https://github.com/wp-graphql/wp-graphql) is a free, open-source WordPress plugin that provides an extendable GraphQL schema and API for any WordPress site.
-* WPGraphQL JWT Authentication [wp-graphql/wp-graphql-jwt-authentication](https://github.com/wp-graphql/wp-graphql-jwt-authentication) extends the WPGraphQL plugin to provide authentication using JWT (JSON Web Tokens)
-* WPGraphQL Gutenberg [pristas-peter/wp-graphql-gutenberg](https://github.com/pristas-peter/wp-graphql-gutenberg) allows you to query gutenberg blocks through wp-graphql
-* Advanced Custom Fields [wpackagist-plugin/advanced-custom-fields](https://www.advancedcustomfields.com/) allows you to take full control of your WordPress edit screens & custom field data.
-* Headless CMS [imranhsayed/headless-cms](https://github.com/imranhsayed/headless-cms) adds features to use WordPress as a headless CMS with any front-end environment using REST API
-* [yoast/wordpress-seo](https://yoast.com/wordpress/plugins/seo/#utm_source=yoast-seo&utm_medium=software&utm_campaign=wordpress-general) help you rank higher in search engines.
-* WPGraphQL Yoast SEO [ashhitch/wp-graphql-yoast-seo](https://github.com/ashhitch/wp-graphql-yoast-seo) This is an extension to the [WPGraphQL](https://github.com/wp-graphql/wp-graphql) plugin that returns Yoast SEO data.
-* WPGraphQL Offset Pagination [valu/wp-graphql-offset-pagination](https://github.com/valu-digital/wp-graphql-offset-pagination) adds traditional offset pagination support to WPGraphQL.
 
 and add your own WordPress site URL
 in an .env file, You can check the .env-example file for reference.
