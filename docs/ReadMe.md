@@ -177,11 +177,11 @@ cd nextjs-headless-wordpress
 
 - Install Docker from [docs.docker.com/get-docker](https://docs.docker.com/get-docker/) ( this step may not be required if you are using your own WordPress setup.)
 
-#### [Backend](https://github.com/imranhsayed/nextjs-headless-wordpress/tree/master/backend)
-Run this from root
 ```bash
+cd backend
 docker-compose -f backend/docker-compose.yml up -d 
 ```
+
 - Make sure to set Home Page as Front page from WordPress dashboard > Customize > Homepage Settings.
 *WordPress Backend* will be available on [http://localhost:8020](http://localhost:8020)
 
