@@ -253,15 +253,14 @@ phpmyadmin docker image already comes with the username `root` and we have set t
 
 This course requires the following plugin extensions:
 
-	* WPGraphQL [wp-graphql/wp-graphql](https://github.com/wp-graphql/wp-graphql) is a free, open-source WordPress plugin that provides an extendable GraphQL schema and API for any WordPress site.
-	* WPGraphQL JWT Authentication [wp-graphql/wp-graphql-jwt-authentication](https://github.com/wp-graphql/wp-graphql-jwt-authentication) extends the WPGraphQL plugin to provide authentication using JWT (JSON Web Tokens)
-	* WPGraphQL Gutenberg [pristas-peter/wp-graphql-gutenberg](https://github.com/pristas-peter/wp-graphql-gutenberg) allows you to query gutenberg blocks through wp-graphql
-    * Advanced Custom Fields [wpackagist-plugin/advanced-custom-fields](https://www.advancedcustomfields.com/) allows you to take full control of your WordPress edit screens & custom field data.
-    * Headless CMS [imranhsayed/headless-cms](https://github.com/imranhsayed/headless-cms) adds features to use WordPress as a headless CMS with any front-end environment using REST API
-	* [yoast/wordpress-seo](https://yoast.com/wordpress/plugins/seo/#utm_source=yoast-seo&utm_medium=software&utm_campaign=wordpress-general) help you rank higher in search engines.
-	* WPGraphQL Yoast SEO [ashhitch/wp-graphql-yoast-seo](https://github.com/ashhitch/wp-graphql-yoast-seo) This is an extension to the [WPGraphQL](https://github.com/wp-graphql/wp-graphql) plugin that returns Yoast SEO data.
-    * valu/wp-graphql-offset-pagination
-
+* WPGraphQL [wp-graphql/wp-graphql](https://github.com/wp-graphql/wp-graphql) is a free, open-source WordPress plugin that provides an extendable GraphQL schema and API for any WordPress site.
+* WPGraphQL JWT Authentication [wp-graphql/wp-graphql-jwt-authentication](https://github.com/wp-graphql/wp-graphql-jwt-authentication) extends the WPGraphQL plugin to provide authentication using JWT (JSON Web Tokens)
+* WPGraphQL Gutenberg [pristas-peter/wp-graphql-gutenberg](https://github.com/pristas-peter/wp-graphql-gutenberg) allows you to query gutenberg blocks through wp-graphql
+* Advanced Custom Fields [wpackagist-plugin/advanced-custom-fields](https://www.advancedcustomfields.com/) allows you to take full control of your WordPress edit screens & custom field data.
+* Headless CMS [imranhsayed/headless-cms](https://github.com/imranhsayed/headless-cms) adds features to use WordPress as a headless CMS with any front-end environment using REST API
+* [yoast/wordpress-seo](https://yoast.com/wordpress/plugins/seo/#utm_source=yoast-seo&utm_medium=software&utm_campaign=wordpress-general) help you rank higher in search engines.
+* WPGraphQL Yoast SEO [ashhitch/wp-graphql-yoast-seo](https://github.com/ashhitch/wp-graphql-yoast-seo) This is an extension to the [WPGraphQL](https://github.com/wp-graphql/wp-graphql) plugin that returns Yoast SEO data.
+* WPGraphQL Offset Pagination [valu/wp-graphql-offset-pagination](https://github.com/valu-digital/wp-graphql-offset-pagination) adds traditional offset pagination support to WPGraphQL.
 
 and add your own WordPress site URL
 in an .env file, You can check the .env-example file for reference.
