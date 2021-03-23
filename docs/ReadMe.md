@@ -32,7 +32,7 @@ without having to re-build next.js the application.
 ## [Live Demo Link](https://nextjs-headless-wordpress-demo.vercel.app/)
 https://nextjs-headless-wordpress-demo.vercel.app/
 
-![](demo/demo.gif)
+![](../demo/demo.gif)
 
 ## Setup
 
