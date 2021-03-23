@@ -261,6 +261,8 @@ You can find more documentation on MySQL [here](https://dev.mysql.com/doc/)
 
 ### Setup Next.js from scratch
 
+Learn about how to setup [Next.js](https://nextjs.org/) from scratch for Headless WordPress. For more info see [here](https://nextjs.org/docs/getting-started)
+
 ### Add TailwindCSS to a Next.JS Application
 
 ### Setup Apollo GraphQL Next.js
