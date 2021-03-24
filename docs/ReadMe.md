@@ -140,7 +140,7 @@ Tutorial|Video|Commit
 [Docker WordPress Tutorial](#docker-wordpress-tutorial)|[21:27](https://www.youtube.com/watch?v=lQo9L3bk1J4)|[036e893](https://github.com/imranhsayed/nextjs-headless-wordpress/commit/036e89334c38c0ce7bc56dcbe988998e6cacf580)
 [Docker Containers](#docker-containers)|[13:42](https://www.youtube.com/watch?v=tJb5HjUuQzE)|[commitId](https://github.com/commitId)
 [Setup Next.js from scratch](#setup-nextjs-from-scratch)|[14:13](https://www.youtube.com/watch?v=OPEyP6EDUOk)|[commitId](https://github.com/commitId)
-[Add TailwindCSS to a Next.JS Application](#add-tailwindcss-to-a-nextjs-application)|[13:31](https://www.youtube.com/watch?v=o6nuaf8zKvg)|[commitId](https://github.com/commitId)
+[Add TailwindCSS to a Next.JS Application](#add-tailwindcss-to-a-nextjs-application)|[13:31](https://www.youtube.com/watch?v=o6nuaf8zKvg)|[93038cd7134f6339359f70e7683b1aadd55cead7](https://github.com/imranhsayed/nextjs-headless-wordpress/commit/93038cd7134f6339359f70e7683b1aadd55cead7#diff-1cf387c012cd2d02f1923e589f86df4a4802427057dbc90f47b87f04d29d54bc)
 [Setup Apollo GraphQL Next.js](#setup-apollo-graphql-nextjs)|[9:55](https://www.youtube.com/watch?v=XRQqiGVyvj0)|[commitId](https://github.com/commitId)
 [Fetch Menus with GraphQL](#fetch-menus-with-graphql)|[13:21](https://www.youtube.com/watch?v=QZA51PwSF7w)|[commitId](https://github.com/commitId)
 [getStaticProps Next.js](#getstaticprops-nextjs)|[8:03](https://www.youtube.com/watch?v=Tnghi0bglT4)|[commitId](https://github.com/commitId)
@@ -264,6 +264,11 @@ You can find more documentation on MySQL [here](https://dev.mysql.com/doc/)
 Learn about how to setup [Next.js](https://nextjs.org/) from scratch for Headless WordPress. For more info see [here](https://nextjs.org/docs/getting-started)
 
 ### Add TailwindCSS to a Next.JS Application
+
+Learn about how to setup [Tailwind](https://tailwindcss.com) with [Sass](https://github.com/sass/sass) in a Next.js application
+
+See this blog [Next.js Tailwindcss with SASS example](https://codeytek.com/next-js-tailwind-with-sass-example/)
+
 
 ### Setup Apollo GraphQL Next.js
 
